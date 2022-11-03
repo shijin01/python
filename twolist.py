@@ -1,17 +1,12 @@
 a=[]
 b=[]
-s1=0
-s2=0
 astr=input("Enter the elements of list1:")
-n=0
 astr=astr.split(" ")
+a=list(map(int,bstr))
+n=len(b)
+s1=sum(b)
 bstr=input("Enter the elements of list2:")
 bstr=bstr.split(" ")
-for i in astr:
-    e=int(i)
-    a.append(e)
-    s1+=e
-    n+=1
 b=list(map(int,bstr))
 m=len(b)
 s2=sum(b)
