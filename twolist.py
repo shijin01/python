@@ -2,9 +2,9 @@ a=[]
 b=[]
 astr=input("Enter the elements of list1:")
 astr=astr.split(" ")
-a=list(map(int,bstr))
-n=len(b)
-s1=sum(b)
+a=list(map(int,astr))
+n=len(a)
+s1=sum(a)
 bstr=input("Enter the elements of list2:")
 bstr=bstr.split(" ")
 b=list(map(int,bstr))
@@ -15,10 +15,10 @@ for i in a:
     if i in b:
         c.append(i)
 if(m==n):
-    print("Same length")
-else:
-    print("Different length")
-print("S1=",s1,"S2=",s2)
+    print("Both list have same length")
+else: 
+    print("Both list have different length")
+#print("S1=",s1,"S2=",s2)
 if(s1==s2):
     print("Sum of elements in both list are same")
 else:
