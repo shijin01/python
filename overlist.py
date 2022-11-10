@@ -1,10 +1,3 @@
-n=int(input("Enter the number of elements in list:"))
-print(f"Enter {n} elements:")
-a=[]
-for i in range(n):
-	e=int(input())
-	if e>100:
-		a.append("over")
-	else:
-		a.append(e)
+a=[int(i) for i in input("Enter number list:").split(" ")]
+a=[x if x<100 else "over" for x in a]
 print(f" List:{a}")
