@@ -1,3 +1,6 @@
 line=input("Enter the line:")
 words=line.split(" ")
-print(f"Number of words in line \'{line}\' : {len(words)}")
+d={}
+for i in words:
+	d[i]=words.count(i)
+print(f"Occurance of words in line \'{line}\' : {d}")
