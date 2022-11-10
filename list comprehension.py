@@ -1,7 +1,4 @@
-a=[]
-astr=input("Enter elements:")
-astr=astr.split(" ")
-a=list(map(int,astr))
+a=[int(x) for x in input("Enter elements:").split(" ")]
 b=input("Enter a word:")
 c=[x for x in a if x>0 ]
 print("List:",a)
