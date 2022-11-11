@@ -4,7 +4,7 @@ for i in range(n):
 	key=input("\nEnter the Key : ")
 	value=input("Enter the Value : ")
 	d1[key]=value
-print(f"Dict1:{d1}")
+print(f"Dict:{d1}")
 a_dict=sorted(d1.items(),reverse=0)
 d_dict=sorted(d1.items(),reverse=1)
 
