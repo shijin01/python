@@ -6,7 +6,7 @@ def createlist(a,b):
 		if isdigiteven(i)==1 and i in s:
 			l.append(i)
 			
-	print(f"List of four digit numbers in a {a} and {b} with all their digits even and the number is a perfect square:{l}")		
+	print(f"List of four digit numbers from {a} to {b} with all their digits even and the number is a perfect square:{l}")		
 			
 def isdigiteven(n):
 	while(n>0):
@@ -16,7 +16,7 @@ def isdigiteven(n):
 		n=int(n/10)
 	return 1
 	
-a=int(input("Enter the range:"))
-b=int(input())
+a=int(input("Enter the range:\n\tLowerbound:"))
+b=int(input("\tUpperbound:"))
 createlist(a,b)
 
