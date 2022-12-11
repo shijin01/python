@@ -11,6 +11,6 @@ def fib(n):
 		c=a+b
 	
 n=int(input("Enter a number:"))
-print(f"Fibonacci series upto {n}:",end=" ")
+print("Fibonacci series:",end=" ")
 fib(n)
 
