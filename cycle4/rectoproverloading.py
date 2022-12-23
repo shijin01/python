@@ -1,10 +1,10 @@
 class rectangle:
 	def __init__(self,a,b):
-		self._length=a
-		self._breadth=b
+		self.__length=a
+		self.__breadth=b
 		
 	def area(self):
-		self.area1=self._length*self._breadth
+		self.area1=self.__length*self.__breadth
 		return self.area1
 	def __lt__(self,other):
 		if(self.area1<other.area1):
