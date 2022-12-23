@@ -17,11 +17,12 @@ class Time:
 			sec=sec%60
 		return Time(hour,minute,sec)
 	def viewtime(self):
-		print(f"{self._hour}:{self._minute}:{self._sec}")
+		print(f"{self.__hour}:{self.__minute}:{self.__sec}")
 t1=[int(i)  for i in input("Enter time1:").split(":")]
 t2=[int(i) for i in input("Enter time2:").split(":")]
 time1=Time(t1[0],t1[1],t1[2])
 time2=Time(t2[0],t2[1],t2[2])
+
 sumt=time1+time2
 print("Time1-",end=" ")
 time1.viewtime()
