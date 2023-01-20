@@ -5,6 +5,13 @@ with open('dict.csv', 'w') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames = field)
     writer.writeheader()
     writer.writerows(bikes)
-with open('dict.csv','r') as file_obj:
-    read_obj = csv.reader(file_obj,delimiter='\t')
-    [print((x[0]).replace(",","        ")) for x in read_obj if x!=[]]
+with open('dict.csv','r') as fileobj:
+    read_obj = csv.reader(fileobj)
+    l=[]
+    for x in read_obj:
+    	l.append(x)
+    for i in l:
+    	for j in i:
+    		print(j,end="\t")
+    	print()
+	
